@@ -169,7 +169,7 @@ class Yanji(models.Model):
 	category = models.ForeignKey(Category)
 	tag = models.ManyToManyField(Tag, blank=True)
 	movietv = models.ForeignKey(Movietv)
-	fengmian = models.ImageField(verbose_name='封面图', upload_to='yanji_fengmian', null=True, blank=True)
+	fengmian = models.ImageField(verbose_name='封面图', upload_to='yanji_fengmian/', null=True, blank=True)
 	video = models.URLField(verbose_name='视频地址', max_length=200, default='www.actorgogo.com')
 	ctime = models.DateTimeField(verbose_name='添加时间', null=True, default=timezone.now)
 

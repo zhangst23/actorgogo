@@ -13,7 +13,7 @@ class IndexView(ListView):
 	model = Yanji
 	template_name = 'yanji/index.html'
 	context_object_name = 'yanji_list'
-	paginate_by = 8
+	paginate_by = 6
 
 
 

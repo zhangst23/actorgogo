@@ -31,7 +31,7 @@
 		{% for actor in actor_list %}
 		  <div class="col-xs-6 col-md-3">
 		    	<a class="thumbnail" href="{% url 'yanji:actor' actor.pk %}">
-			      <img src="/upload/{{ actor.touxiang }}" alt="{{ actor.name }}">
+			      <img class="actor_list_touxiang" src="/upload/{{ actor.touxiang }}" alt="{{ actor.name }}">
 			      <br>
 			      <p>{{ actor.name }}</p>
 		      </a>

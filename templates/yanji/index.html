@@ -31,7 +31,7 @@
 		{% for yanji in yanji_list %}
 		  <div class="col-xs-6 col-md-3">
 		    	<a class="thumbnail" href="{{ yanji.get_absolute_url }}">
-			      <img src="/media/{{ yanji.fengmian }}" alt="{{ yanji.title }}"/>
+			      <img src="/upload/{{ yanji.fengmian }}" alt="{{ yanji.title }}"/>
 			      <br>
 			      <p>{{ yanji.title }}</p>
 		      </a>
@@ -62,7 +62,7 @@
 	    	{% for actor in actor_list %}	        
 	        <a class="thumbnail" href="{% url 'yanji:actor' actor.pk %}">
 	        	<div class="swiper-slide">
-				      <img src="/media/{{ actor.touxiang }}" alt="{{ actor.name }}"/>
+				      <img src="/upload/{{ actor.touxiang }}" alt="{{ actor.name }}"/>
 				      <!-- <br> -->
 				      <p>{{ actor.name }}</p>
 				    </div>

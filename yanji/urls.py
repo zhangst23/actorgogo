@@ -20,7 +20,7 @@ urlpatterns = [
 	url(r'^drama/(?P<pk>[0-9]+)/$', views.DramaDetailView.as_view(), name='drama'),
 	url(r'^taici/$', views.TaiciView.as_view(), name='taici_list'),
 	url(r'^taici/(?P<pk>[0-9]+)/$', views.TaiciDetailView.as_view(), name='taici'),
-
+	url(r'^upload/(?P<path>.*)', serve, {"document_root":MEDIA_ROOT}),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

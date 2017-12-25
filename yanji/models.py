@@ -59,7 +59,7 @@ class Ptitle(models.Model):
 @python_2_unicode_compatible
 class Actor(models.Model):
 	name = models.CharField(verbose_name='演员', max_length=100)
-	touxiang = models.FieldField(verbose_name='头像', upload_to='yanyuan_tx/', null=True, blank=True)
+	touxiang = models.FileField(verbose_name='头像', upload_to='yanyuan_tx/', null=True, blank=True)
 	ctime = models.DateTimeField(verbose_name='添加时间', null=True, default=timezone.now)
 	ptitle = models.ForeignKey(Ptitle, blank=True)
 

@@ -19,5 +19,6 @@ import xadmin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^xadmin/', include(xadmin.site.urls)),
     url(r'', include('yanji.urls')),
 ]

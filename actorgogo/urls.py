@@ -18,6 +18,6 @@ from django.contrib import admin
 import xadmin
 
 urlpatterns = [
-    url(r'^xadmin/', include(xadmin.site.urls)),
+    url(r'^xadmin/', xadmin.site.urls),
     url(r'', include('yanji.urls')),
 ]
